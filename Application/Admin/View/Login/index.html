@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="__PUBLIC__/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/js/jquery.form.min.js"></script>
+    <script src="__PUBLIC__/js/layer/layer.js"></script>
+    <script src="__PUBLIC__/js/ajaxsend.js"></script>
+    <script>
+        var Logn_in = "{:U('Index/index')}";
+    </script>
+</head>
+<body>
+
+<form id="form1" method="post" action="__SELF__">
+    <p>用户名：<input type="text" name="name" /></p>
+    <p>密码：<input type="password" name="password" /></p>
+    <p>验证码：<input type="text" name="verify" /><img src="{:U('Admin/Login/verifyImg')}" onclick="this.src='/index.php/Admin/Login/verifyImg/time'+Math.random()" /></p>
+    <p><input type="submit" value="登陆" /></p>
+</form>
+
+
+</body>
+</html>
